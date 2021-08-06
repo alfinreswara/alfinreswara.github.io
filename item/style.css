@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
+:root{
+	--text-color:#333;
+	--bg-color:#fff;
+}
+html[data-color-mode="dark"]{
+	--text-color:#fff;
+	--bg-color:#333;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	overflow-x: hidden;
+	background-color: var(--bg-color);
+}
+/* .container {
+	
+} */
+.bjir {
+	background-color: #4a4aea;
+}
+.bi-moon-fill {
+	color: #fff;
+}
+nav .brand {
+	letter-spacing: 2px;
+}
+h2 i {
+	cursor: pointer;
+}
+/* nav ul li {
+	margin-right: 40px;
+} */
+/* #intro {
+	background-color: aqua;
+} */
+.intro {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 400px;
+	grid-template-areas: "nama logo";
+	margin-top: 3rem;
+}
+img.logo {
+	grid-area: logo;
+	width: 300px;
+	height: 300px;
+	border-radius: 50% 0 50% 0;
+	border: 15px solid #4a4aea;
+	margin-top: 30px;
+}
+.nama {
+	display: grid;
+	grid-area: nama;
+	align-content: center;
+	margin-top: 50px;
+	font-family: 'Kanit', sans-serif;
+}
+.nama h1 {
+	font-size: 3em;
+	color: #4a4aea;
+}
+.alfin {
+	letter-spacing: 3px;
+}
+.alfin span {
+	display: inline-block;
+	transition: 1.2s;
+	cursor: pointer;
+}
+.alfin span:hover {
+	transform: scale(1.6) translateY(-20px);
+}
+/* about */
+.about {
+	display: grid;
+	margin-top: 150px;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: "judul-about judul-about"
+	"p1 jdl-about" 
+	"p2 jdl-about";
+}
+.judul-about {
+	grid-area: judul-about;
+	margin-top: 100px;
+}
+.about p:nth-child(2) {
+	grid-area: p1;
+	margin-top: 50px;
+}
+.about p:nth-child(3) {
+	grid-area: p2;
+}
+.logo-about {
+	grid-area: jdl-about;
+	width: 400px;
+	height: 400px;
+}
+
+#contact {
+	background-image: url(contact-us.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+	height: auto;
+	margin-top: 150px;
+}
+footer.ok{
+	color: #fff;
+	text-align: center;
+	background-color: #4a4aea;
+	padding: 50px;
+	margin-top: 150px;
+}
+.judul{
+	color: var(--text-color);
+}
+.kontak {
+	margin-bottom: 100px;
+	color: var(--text-color);
+}
+
+@media screen and (max-width:900px){
+	.intro {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "logo" "nama";
+		justify-content: center;
+		text-align: center;
+	}
+	img.logo {
+		margin: 0 auto;
+	}
+	.about {
+	display: grid;
+	grid-template-columns: 1fr; 
+	grid-template-areas: "judul-about"
+	"p1" 
+	"p2";
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	}
+	.logo-about {
+		display: none;
+	}
+}
