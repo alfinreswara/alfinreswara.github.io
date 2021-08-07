@@ -18,9 +18,7 @@ body {
 	overflow-x: hidden;
 	background-color: var(--bg-color);
 }
-/* .container {
-	
-} */
+/* navbar */
 .bjir {
 	background-color: #4a4aea;
 }
@@ -33,12 +31,7 @@ nav .brand {
 h2 i {
 	cursor: pointer;
 }
-/* nav ul li {
-	margin-right: 40px;
-} */
-/* #intro {
-	background-color: aqua;
-} */
+/* konten */
 .intro {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -101,15 +94,13 @@ img.logo {
 	width: 400px;
 	height: 400px;
 }
-
+/* contact */
 #contact {
-	background-image: url(contact-us.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	max-width: 100%;
-	height: auto;
 	margin-top: 150px;
+}  
+.kontak {
+	margin-bottom: 100px;
+	color: var(--text-color);
 }
 footer.ok{
 	color: #fff;
@@ -134,6 +125,7 @@ footer.ok{
 		grid-template-areas: "logo" "nama";
 		justify-content: center;
 		text-align: center;
+		margin-top: 100px;
 	}
 	img.logo {
 		margin: 0 auto;
