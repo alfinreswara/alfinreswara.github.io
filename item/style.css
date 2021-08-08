@@ -3,10 +3,13 @@
 :root{
 	--text-color:#333;
 	--bg-color:#fff;
+	--fix-color:#4C2A85;
+	--border-color:#4C2A86;
 }
 html[data-color-mode="dark"]{
 	--text-color:#fff;
 	--bg-color:#333;
+	--border-color:#4a4aea;
 }
 *{
     margin: 0;
@@ -20,7 +23,7 @@ body {
 }
 /* navbar */
 .bjir {
-	background-color: #4a4aea;
+	background-color: var(--fix-color);
 }
 .bi-moon-fill {
 	color: #fff;
@@ -44,7 +47,7 @@ img.logo {
 	width: 300px;
 	height: 300px;
 	border-radius: 50% 0 50% 0;
-	border: 15px solid #4a4aea;
+	border: 15px solid var(--border-color);
 	margin-top: 30px;
 }
 .nama {
@@ -105,12 +108,13 @@ img.logo {
 footer.ok{
 	color: #fff;
 	text-align: center;
-	background-color: #4a4aea;
+	background-color: var(--fix-color);
 	padding: 50px;
 	margin-top: 150px;
 }
 .judul{
 	color: var(--text-color);
+	letter-spacing: 2px;
 }
 .kontak {
 	margin-bottom: 100px;
